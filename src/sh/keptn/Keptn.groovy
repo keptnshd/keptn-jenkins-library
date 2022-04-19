@@ -754,7 +754,7 @@ def waitForEvaluationDoneEvent(Map args) {
             default:
                 catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                     error("Keptn Score: ${score}, Result: ${result}")
-                    echo "FAILURE"
+                    exit 1
                 }
                 break;
         }
