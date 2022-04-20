@@ -760,7 +760,7 @@ def waitForEvaluationDoneEvent(Map args) {
         }
     }
 
-    return score
+    return result
 }
 
 /**
